@@ -15,6 +15,7 @@ public class plus {
         int[] answer1 = new int[10];
         int[] wrong=new int[10];
         int retry;
+int count=0;
         for(int i = 0; i < 10; i++) {
             num1[i] = random.nextInt(91) + 10;
             num2[i] = random.nextInt(91) + 10;
@@ -28,7 +29,9 @@ public class plus {
             }else {
                 System.out.println("틀렸습니다");
                 wrong[i]+=1;
+		int count+=1;
             }}
+System.out.print(count+"개 틀렸습니다.")
             for(int j=0;j<10;j++){
             if(wrong[j]==0){
             }
